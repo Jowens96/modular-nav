@@ -11,7 +11,6 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font-family: sans-serif;
-
 }
 
 *, *::before, *::after {
@@ -24,14 +23,14 @@ body {
 }
 
 header {
-   background-color: #e2e2e2;
- }
+  background-color: #e2e2e2;
+}
 
 h1 {
   text-align: center;
 }
 
-nav {
+.navi, .solar {
   text-align: center;
 }
 
@@ -40,11 +39,23 @@ li {
 }
 
 a {
-   text-decoration: none;
-   color: #0074d9;
- }
+  text-decoration: none;
+  color: #0074d9;
+}
 
- a:hover {
+a:hover {
   background-color: #0074d9;
   color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .navi {
+    text-align: right;
+  }
+
+  .solar {
+    text-align: left;
+  }
+
 }
